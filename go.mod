@@ -1,5 +1,4 @@
-module github.com/mattermost/mattermost-plugin-starter-template
-
+module github.com/HandsomeChoco/quick-translate-helper
 go 1.16
 
 require (
