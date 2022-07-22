@@ -4,6 +4,8 @@ import {GlobalState} from 'mattermost-redux/types/store';
 
 import MenuItem from 'components/messages_action_menu/menu';
 
+import reducer from 'reducer/reducer';
+
 import manifest from './manifest';
 
 // eslint-disable-next-line import/no-unresolved
@@ -14,6 +16,7 @@ export default class Plugin {
     public async initialize(registry: PluginRegistry, store: Store<GlobalState, Action<Record<string, unknown>>>) {
         // @see https://developers.mattermost.com/extend/plugins/webapp/reference/
         registry.registerPostDropdownMenuComponent(MenuItem);
+        registry.registerReducer(reducer);
     }
 }
 
