@@ -2,7 +2,7 @@ import {Store, Action} from 'redux';
 
 import {GlobalState} from 'mattermost-redux/types/store';
 
-import MenuItem from 'components/messages_action_menu/menu';
+import MenuItem from 'components/menu/menu';
 
 import reducer from 'reducer/reducer';
 

@@ -3,11 +3,10 @@ import React from 'react';
 import {useStore} from 'react-redux';
 
 import GoogleIcon from 'components/icon/google_icon';
-import {id} from 'manifest';
 
 function MenuItem() {
     const store = useStore();
-    console.log(store.getState()[`plugins-${id}`]);
+
     return (
         <li
             className='MenuItem MenuItem--with-icon'
